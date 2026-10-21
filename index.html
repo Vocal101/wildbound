@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Wildbound</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;height:100%;background:#0b0f18;overflow:hidden}
+  body{display:flex;align-items:center;justify-content:center}
+  canvas{image-rendering:pixelated;image-rendering:crisp-edges;display:block;outline:none}
+  #help{position:fixed;left:8px;bottom:6px;color:#56627a;font:11px monospace;pointer-events:none}
+</style>
+</head>
+<body>
+<canvas id="game" tabindex="0"></canvas>
+<div id="help">Arrows/WASD move &middot; Z/Space/Enter = A &middot; X/Backspace = B &middot; Esc/M = Menu &middot; Shift = Run</div>
+<script src="js/core.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/data_types.js"></script>
+<script src="js/data_moves.js"></script>
+<script src="js/data_species.js"></script>
+<script src="js/data_items.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/tiles.js"></script>
+<script src="js/mon.js"></script>
+<script src="js/battle.js"></script>
+<script src="js/menus.js"></script>
+<script src="js/world.js"></script>
+<script src="js/maps.js"></script>
+<script src="js/maps2.js"></script>
+<script src="js/story.js"></script>
+<script>if (/[?&]dev\b/.test(location.search)) document.write('<script src="js/devtest.js"><\/script>');</script>
+<script src="js/title.js"></script>
+</body>
+</html>
